@@ -7,12 +7,13 @@ int main()
     int a = 10;
     int b = 6;
     int y = 20;
-    int *c = &a;
-    cout << "Alamat memori : " << c << endl;
-    cout << "Nilai dari C : " << *c << endl;
-    c = &y;
-    cout << "Alamat memori : " << c << endl;
-    cout << "Nilai dari C : " << *c << endl;
+    int *c = &a;  // c menunjuk ke alamat a
+    cout << "Alamat memori c (-> a): " << c << endl;
+    cout << "Nilai dari *c: " << *c << endl;
+
+    c = &y; // sekarang c menunjuk ke alamat y
+    cout << "Alamat memori c (-> y): " << c << endl;
+    cout << "Nilai dari *c: " << *c << endl;
 
     int &d = b; // d adalah referensi ke b
     cout << "Nilai d (referensi ke b): " << d << endl;
